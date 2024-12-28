@@ -1,0 +1,120 @@
+
+        /* تحديد الألوان */
+        :root {
+            --primary-color: #343a40;
+            --accent-color: #ffc107;
+            --background-color: #f8f9fa;
+            --footer-color: #343a40;
+        }
+
+        /* تنسيق Navbar */
+        .navbar {
+            padding: 10px 0;
+            z-index: 10;
+        }
+
+        .navbar-toggler {
+            border: none;
+        }
+
+        /* تنسيق الهيدر */
+        header {
+            background-color: var(--primary-color);
+            color: #fff;
+            text-align: center;
+            padding-top: 120px;
+        }
+
+        header img {
+            transition: transform 0.3s ease;
+            margin-top: 50px;
+        }
+
+        header h1 {
+            margin-top: 20px;
+            font-size: 2.5rem;
+        }
+
+        /* تنسيق الأقسام */
+        section {
+            padding: 60px 0;
+        }
+
+        #objective, #projects, #education, #experience, #contact {
+            background-color: var(--background-color);
+        }
+
+        h2 {
+            font-size: 2rem;
+            margin-bottom: 30px;
+            color: var(--primary-color);
+        }
+
+        /* تنسيق التعليم */
+        #education ul {
+            list-style-type: none;
+            padding-left: 0;
+        }
+
+        #education li {
+            font-size: 1.1rem;
+            padding: 5px 0;
+        }
+
+        /* تحسين الكروت في قسم المشاريع */
+        .card {
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+            border: none;
+        }
+
+        .card:hover {
+            transform: scale(1.05);
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+        }
+
+        .card-body h3 {
+            font-size: 1.5rem;
+            color: var(--primary-color);
+        }
+
+        .card-body p {
+            font-size: 1rem;
+        }
+
+        /* تنسيق  Footer */
+        footer {
+            background-color: var(--footer-color);
+            color: #fff;
+            padding: 20px 0;
+        }
+
+        footer a {
+            color: var(--accent-color);
+            text-decoration: none;
+            padding: 0 5px;
+        }
+
+        footer a:hover {
+            color: #fff;
+        }
+
+        /* تنسيق النصوص */
+        p {
+            font-size: 1.1rem;
+        }
+
+        /* جعل التصميم متوافق مع الأجهزة المحمولة */
+        @media (max-width: 767px) {
+            header h1 {
+                font-size: 2rem;
+            }
+
+            .card-body h3 {
+                font-size: 1.2rem;
+            }
+
+            .container {
+                padding-left: 15px;
+                padding-right: 15px;
+            }
+        }
